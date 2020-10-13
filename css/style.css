@@ -1,0 +1,42 @@
+.main-container{
+    background-color: darkblue;
+    color: darkgrey;
+}
+
+.main-container ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    font-size: 35px;
+}
+
+.logo {
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    margin: 25px 0px 0px 0px;
+    background-color: darkgrey;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.calc-container {
+    margin: 1px 35%;
+}
+
+.calc-container ul{
+    list-style-type: none;
+}
+
+.number-bttn{
+    width: 15px;
+    padding: 25px;
+}
+
+.calc-grid td:hover{
+    background-color: darkseagreen;
+}
