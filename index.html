@@ -4,62 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Calculator</title>
+    <title>Vue Basics</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
 </head>
 
 <body>
-    <div class="main-container">
-        <ul>
-            <li>
-                <p>Calculator &nbsp;</p>
-            </li>
-            <li>
-                <img src="res/calculator.svg" alt="Not found" class="logo">
-            </li>
-
-        </ul>
+    <div id="app">
+        <p>{{appName}}</p>
     </div>
 
-    <div class="calc-container">
-        <ul>
-            <li>
-                <h1 id="result" style="text-align: center;">0</h1>
-            </li>
-            <li>
-                <table class="calc-grid">
-                    <tr>
-                        <td><img src="res/7.svg" alt="number7" class="number-bttn" onclick="number('7')"></td>
-                        <td><img src="res/8.svg" alt="number8" class="number-bttn" onclick="number('8')"></td>
-                        <td><img src="res/9.svg" alt="number9" class="number-bttn" onclick="number('9')"></td>
-                        <td><img src="res/plus.svg" alt="plus-sign" class="number-bttn" onclick="operator('+')"></td>
-                    </tr>
+    <script src="./js/main.js"></script>
 
-                    <tr>
-                        <td><img src="res/4.svg" alt="number4" class="number-bttn" onclick="number('4')"></td>
-                        <td><img src="res/5.svg" alt="number5" class="number-bttn" onclick="number('5')"></td>
-                        <td><img src="res/6.svg" alt="number6" class="number-bttn" onclick="number('6')"></td>
-                        <td><img src="res/minus.svg" alt="minus-sign" class="number-bttn" onclick="operator('-')"></td>
-                    </tr>
-
-                    <tr>
-                        <td><img src="res/1.svg" alt="number1" class="number-bttn" onclick="number('1')"></td>
-                        <td><img src="res/2.svg" alt="number2" class="number-bttn" onclick="number('2')"></td>
-                        <td><img src="res/3.svg" alt="number3" class="number-bttn" onclick="number('3')"></td>
-                        <td><img src="res/multiply.svg" alt="multiply-sign" class="number-bttn" onclick="operator('*')"></td>
-                    </tr>
-
-                    <tr>
-                        <td><img src="res/clear.svg" alt="clear" class="number-bttn" onclick="clear_selection()"></td>
-                        <td><img src="res/0.svg" alt="number0" class="number-bttn" onclick="number('0')"></td>
-                        <td><img src="res/equal.svg" alt="equal-sign" class="number-bttn"  onclick="operator('=')"></td>
-                        <td><img src="res/divide.svg" alt="divide-sign" class="number-bttn" onclick="operator('/')"></td>
-                    </tr>
-                </table>
-            </li>
-        </ul>
-    </div>
+    <script>
+        const mountedAPP = app.mount('#app');
+    </script>
 </body>
 
 </html>
