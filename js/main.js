@@ -47,6 +47,7 @@ function operator(op) {
     if (op == "=") {
         calc();
         clear_selection();
+        return;
     }
 
     if ((op != "") && !(nextOperand)) {
